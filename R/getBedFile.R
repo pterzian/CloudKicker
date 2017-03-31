@@ -13,7 +13,7 @@ GetBedFile <- function(genesList, version = "hg19"){
   
   channel <- RMySQL::dbConnect(RMySQL::MySQL(), user="genome", host="genome-mysql.cse.ucsc.edu" )
   
-  query <- function(...) DBI::dbGetQuery(channel, ...)
+  query <- function(...) suppressWarnings(DBI::dbGetQuery(channel, ...))
   
   query(paste("USE", version))
   
