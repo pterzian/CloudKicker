@@ -1,0 +1,14 @@
+Package: CloudKicker
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+    person("Paul", "Terzian", , "pl.terzian@gmail.com", c("aut", "cre"))
+    )
+Maintainer: The package maintainer <pl.terzian@gmail.com>
+Description: Design to store some usefull functions.
+License: >GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: RMySQL (>= 0.10.10), DBI
+RoxygenNote: 6.0.1
